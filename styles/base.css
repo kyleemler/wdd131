@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #F50C02;
+    --secondary-color: #CDCBD1;
+    --third-color: #CF79E0;
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Work Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+#course-title{
+    display: block;
+    background-color: var(--primary-color);
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem .25rem;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: .5rem;
+    font-size: 2rem;
+}
+
+nav a:hover {
+    color: white;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+}
+
+main {
+    font-family: var(--body-font);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.card {
+    margin: 1rem;
+    border-radius: 10px;
+    border:5px var(--secondary-color) solid;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+    padding: .5rem;
+}
+
+.card-content {
+    padding: 1rem 2rem;
+}
+
+p {
+    padding: .25rem 0;
+}
+
+#family {
+    max-width: 30%;
+    height: auto;
+    float: right;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+#ok-outline {
+    max-width: 30%;
+    height: auto;
+    float: left;
+    margin: .25rem;
+    border: var(--secondary-color) solid 2px;
+    border-radius: 5px;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    font-family: var(--heading-font);
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+

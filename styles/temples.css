@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fefefe;
+    background-color: white;
     color: #333;
 }
 
@@ -14,13 +14,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #4b6cb7;
+    background-color: #3366cc;
     color: white;
     padding: 1rem;
 }
 
 header h1 {
     font-family: 'Playfair Display', serif;
+}
+
+nav {
+    display: flex;
 }
 
 nav ul {
@@ -37,7 +41,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #3a539b;
+    background-color: #3366cc;
     border-radius: 4px;
 }
 
@@ -73,6 +77,6 @@ figure img {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #eee;
+    background-color: white;
     margin-top: 2rem;
 }

@@ -1,0 +1,15 @@
+@media screen and (min-width: 800px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .temples {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

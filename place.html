@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kyle Emler">
+    <meta name="description" content="A webpage with information about Oklahoma, USA, including a weather section and wind chill calculation.">
+    <title>Place Page - Oklahoma</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/place.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Oklahoma, USA</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source
+                    media="(min-width: 800px)"
+                    srcset="images/oklahoma-prairie-large.webp 1400w"
+                    sizes="100vw">
+                <source
+                    media="(max-width: 799px)"
+                    srcset="images/oklahoma-prairie-small.webp 600w"
+                    sizes="100vw">
+                <img src="images/oklahoma-prairie-large.webp" alt="Oklahoma tallgrass prairie landscape under a cloudy blue sky.">
+            </picture>
+
+            <section class="box data">
+                <h2>Data</h2>
+                <p><strong>Area:</strong> 69,899 sq mi</p>
+                <p><strong>Population:</strong> 4.05 million</p>
+                <p><strong>Capital:</strong> Oklahoma City</p>
+                <p><strong>Language:</strong> Twang</p>
+                <p><strong>Currency:</strong> U.S. Dollar</p>
+                <p><strong>Time Zone:</strong> Central Time</p>
+                <p><strong>Area Code:</strong> 918</p>
+            </section>
+
+            <section class="box weather">
+                <h2>Weather <img src="images/weather-icon.svg" alt="" class="weather-icon"></h2>
+                <p><strong>Temperature:</strong> <span id="temperature">45</span> &deg;F</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> <span id="wind-speed">10</span> mph</p>
+                <p><strong>Wind Chill:</strong> <span id="wind-chill"></span></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Kyle Emler | Oklahoma, USA</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

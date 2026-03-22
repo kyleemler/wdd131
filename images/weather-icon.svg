@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Partly cloudy weather icon</title>
+  <circle cx="22" cy="22" r="11" fill="#f4a261"/>
+  <g fill="none" stroke="#f4a261" stroke-linecap="round" stroke-width="4">
+    <path d="M22 5v7"/>
+    <path d="M22 32v7"/>
+    <path d="M5 22h7"/>
+    <path d="M32 22h7"/>
+    <path d="m10 10 5 5"/>
+    <path d="m29 29 5 5"/>
+    <path d="m10 34 5-5"/>
+    <path d="m29 15 5-5"/>
+  </g>
+  <path d="M46 50H18a10 10 0 1 1 2.1-19.8A13 13 0 0 1 44.8 28 9 9 0 1 1 46 50Z" fill="#0f4c5c"/>
+</svg>

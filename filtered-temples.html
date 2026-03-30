@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kyle Emler">
+    <meta name="description" content="An album for various temples of The Church of Jesus Christ of Latter Day Saints. Displayed with adaptive styling for different device screen sizes.">
+
+    <title>Temple Album</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    
+    <script defer src="scripts/filtered-temples.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Open navigation menu">&#9776;</button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temples of the Church of Jesus Christ of Latter Day Saints</h2>
+        <div class="temples"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Kyle Emler | United States of America</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

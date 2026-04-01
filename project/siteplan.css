@@ -1,0 +1,90 @@
+:root {
+    --primary: #1f3a5f;
+    --accent: #d9a441;
+    --light: #eef1f4;
+    --text: #1d2733;
+    --heading-font: "Bree Serif", Georgia, serif;
+    --body-font: "Nunito", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+    color: var(--text);
+    font-family: var(--body-font);
+    line-height: 1.6;
+}
+
+header,
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+h1,
+h2 {
+    color: var(--primary);
+    font-family: var(--heading-font);
+}
+
+
+
+ul {
+    padding-left: 1.25rem;
+}
+
+.page-header {
+    margin-bottom: 1.5rem;
+}
+
+.eyebrow {
+    color: var(--accent);
+}
+
+
+.color-grid,
+.type-grid,
+.wireframe-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.color-card,
+.type-grid article,
+.wireframe-grid article {
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+.navy {
+    background: #f4f7fb;
+}
+
+.gold {
+    background: #fbf6ea;
+}
+
+.gray {
+    background: var(--light);
+}
+
+.wireframe {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.wireframe div {
+    border: 1px dashed #7b8794;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.desktop-wireframe .full {
+    font-weight: bold;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kyle Emler">
+    <meta
+        name="description"
+        content="Confirmation page for a successfully submitted product review."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/products.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <title>Review Submitted</title>
+</head>
+<body>
+    <header class="hero confirmation-hero">
+        <p class="eyebrow">Review Received</p>
+        <h1>Thanks for sharing your feedback.</h1>
+        <p class="hero-copy">
+            Your review was submitted successfully and has been counted below.
+        </p>
+    </header>
+
+    <main>
+        <section class="confirmation-card">
+            <h2>Submission Summary</h2>
+            <p><strong>Product:</strong> <span id="submitted-product">Not provided</span></p>
+            <p><strong>Rating:</strong> <span id="submitted-rating">Not provided</span></p>
+            <p><strong>Installation Date:</strong> <span id="submitted-date">Not provided</span></p>
+            <p class="review-count">
+                Reviews completed: <span id="review-count">0</span>
+            </p>
+            <a href="form.html" class="return-link">Submit another review</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="current-year"></span> -- Kyle Emler -- United States of America</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

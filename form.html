@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kyle Emler">
+    <meta name="description" content="Product review form for submitting installation feedback and product ratings.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/products.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <title>Product Review Form</title>
+</head>
+<body>
+    <header class="hero">
+        <h1>Product Review Form</h1>
+    </header>
+
+    <main>
+        <section class="form-shell">
+            <div class="intro-card">
+                <h2>Review Details</h2>
+                <p>
+                    Complete the form below. Required fields are marked with *
+                </p>
+            </div>
+
+            <form action="review.html" method="get" class="review-form">
+                <div class="field-group">
+                    <label for="productName">Product Name <span>*</span></label>
+                    <select id="productName" name="productName" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+                </div>
+
+                <div class="field-group">
+                    <label class="section-heading">Overall Rating <span>*</span></label>
+                    <div class="rating-grid">
+                        <div class="rating-option">
+                            <input type="radio" id="rating1" name="overallRating" value="1" required>
+                            <label for="rating1">&starf;<span>1 star</span></label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating2" name="overallRating" value="2" required>
+                            <label for="rating2">&starf;&starf;<span>2 stars</span></label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating3" name="overallRating" value="3" required>
+                            <label for="rating3">&starf;&starf;&starf;<span>3 stars</span></label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating4" name="overallRating" value="4" required>
+                            <label for="rating4">&starf;&starf;&starf;&starf;<span>4 stars</span></label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating5" name="overallRating" value="5" required>
+                            <label for="rating5">&starf;&starf;&starf;&starf;&starf;<span>5 stars</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <label for="installDate">Date of Installation <span>*</span></label>
+                    <input type="date" id="installDate" name="installDate" required>
+                </div>
+
+                <div class="field-group">
+                    <label class="section-heading">Useful Features</label>
+                    <p class="hint">Check all that apply.</p>
+                    <div class="checkbox-grid">
+                        <div class="check-option">
+                            <input type="checkbox" id="durability" name="usefulFeatures" value="Durability">
+                            <label for="durability">Durability</label>
+                        </div>
+                        <div class="check-option">
+                            <input type="checkbox" id="easeOfUse" name="usefulFeatures" value="Ease of Use">
+                            <label for="easeOfUse">Ease of Use</label>
+                        </div>
+                        <div class="check-option">
+                            <input type="checkbox" id="performance" name="usefulFeatures" value="Performance">
+                            <label for="performance">Performance</label>
+                        </div>
+                        <div class="check-option">
+                            <input type="checkbox" id="design" name="usefulFeatures" value="Design">
+                            <label for="design">Design</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <label for="writtenReview">Written Review</label>
+                    <textarea
+                        id="writtenReview"
+                        name="writtenReview"
+                        rows="6"
+                        placeholder="Tell us what stood out during installation or everyday use."
+                    ></textarea>
+                </div>
+
+                <div class="field-group">
+                    <label for="userName">User Name</label>
+                    <input
+                        type="text"
+                        id="userName"
+                        name="userName"
+                        autocomplete="name"
+                        placeholder="Your name"
+                    >
+                </div>
+
+                <input type="submit" value="Submit Review" class="submit-button">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="current-year"></span> -- Kyle Emler -- United States of America</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

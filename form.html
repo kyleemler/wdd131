@@ -18,16 +18,12 @@
     <header class="hero">
         <h1>Product Review Form</h1>
     </header>
-
     <main>
         <section class="form-shell">
             <div class="intro-card">
                 <h2>Review Details</h2>
-                <p>
-                    Complete the form below. Required fields are marked with *
-                </p>
+                <p>Complete the form below. Required fields are marked with *</p>
             </div>
-
             <form action="review.html" method="get" class="review-form">
                 <div class="field-group">
                     <label for="productName">Product Name <span>*</span></label>
@@ -35,7 +31,6 @@
                         <option value="" disabled selected>Select a Product ...</option>
                     </select>
                 </div>
-
                 <div class="field-group">
                     <label class="section-heading">Overall Rating <span>*</span></label>
                     <div class="rating-grid">
@@ -61,12 +56,10 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="field-group">
                     <label for="installDate">Date of Installation <span>*</span></label>
                     <input type="date" id="installDate" name="installDate" required>
                 </div>
-
                 <div class="field-group">
                     <label class="section-heading">Useful Features</label>
                     <p class="hint">Check all that apply.</p>
@@ -89,7 +82,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="field-group">
                     <label for="writtenReview">Written Review</label>
                     <textarea
@@ -99,7 +91,6 @@
                         placeholder="Tell us what stood out during installation or everyday use."
                     ></textarea>
                 </div>
-
                 <div class="field-group">
                     <label for="userName">User Name</label>
                     <input
@@ -110,12 +101,10 @@
                         placeholder="Your name"
                     >
                 </div>
-
                 <input type="submit" value="Submit Review" class="submit-button">
             </form>
         </section>
     </main>
-
     <footer>
         <p>&copy;<span id="current-year"></span> -- Kyle Emler -- United States of America</p>
         <p id="last-modified"></p>

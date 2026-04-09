@@ -38,59 +38,67 @@
         </section>
 
         <section class="card-grid">
-            <article class="content-card">
+            <article class="content-card rules-card">
                 <h2>Basic Rules</h2>
                 <img class="card-image" src="images/disc-golf-putting.jpg" alt="A disc golfer putting toward a basket" loading="lazy" width="900" height="675">
-                <p>Players begin each hole at the tee area and throw toward the basket, counting every throw until the disc comes to rest in the target. The player who is farthest from the basket throws next, and the goal is to finish the hole in the fewest throws. A round score is the total number of throws used across all holes, so lower scores are better.</p>
+                <ul>
+                    <li>Each hole begins with a throw from the tee area.</li>
+                    <li>Players throw toward the basket until the disc lands in the target.</li>
+                    <li>Every throw counts as one stroke.</li>
+                    <li>The player farthest from the basket throws next.</li>
+                    <li>The goal is to finish each hole in the fewest throws possible.</li>
+                    <li>The player with the lowest total score at the end of the round wins.</li>
+                    <li>Players usually continue from the spot where their previous throw landed.</li>
+                    <li>Most courses have 9 or 18 holes that are played in order.</li>
+                </ul>
+                <p><a class="button-link" href="learn.html">Learn more about the history of disc golf</a></p>
             </article>
 
-            <article class="content-card">
-                <h2>Top 10 FPO Players</h2>
-                <p>PDGA World Rankings snapshot as of March 18, 2026.</p>
-                <ol>
-                    <li>Kristin Latt</li>
-                    <li>Silva Saarinen</li>
-                    <li>Missy Gannon</li>
-                    <li>Holyn Handley</li>
-                    <li>Ohn Scoggins</li>
-                    <li>Eveliina Salonen</li>
-                    <li>Ella Hansen</li>
-                    <li>Henna Blomroos</li>
-                    <li>Paige Pierce</li>
-                    <li>Valerie Mandujano</li>
-                </ol>
-                <p><a href="https://www.pdga.com/world-rankings" target="_blank" rel="noopener">View current PDGA world rankings</a></p>
-            </article>
-
-            <article class="content-card">
-                <h2>Top 10 MPO Players</h2>
-                <p>PDGA World Rankings snapshot as of March 18, 2026.</p>
-                <ol>
-                    <li>Gannon Buhr</li>
-                    <li>Richard Wysocki</li>
-                    <li>Calvin Heimburg</li>
-                    <li>Paul McBeth</li>
-                    <li>Isaac Robinson</li>
-                    <li>Anthony Barela</li>
-                    <li>Niklas Anttila</li>
-                    <li>Kyle Klein</li>
-                    <li>Ezra Robinson</li>
-                    <li>Adam Hammes</li>
-                </ol>
-                <p><a href="https://www.pdga.com/world-rankings" target="_blank" rel="noopener">View current PDGA world rankings</a></p>
+            <article class="content-card leaderboard-card">
+                <div class="leaderboard-layout">
+                    <div class="leaderboard-top">
+                        <h2 id="leaderboard-heading">Top 10 FPO Players</h2>
+                        <div class="toggle-group" aria-label="Leaderboard division selector">
+                            <button class="toggle-button is-active" type="button" data-division="fpo">FPO</button>
+                            <button class="toggle-button" type="button" data-division="mpo">MPO</button>
+                        </div>
+                    </div>
+                    <figure class="leaderboard-figure">
+                        <img id="leaderboard-image" class="card-image leaderboard-image" src="images/kristin-latt.jpg" alt="Kristin Latt at a disc golf event" loading="lazy" width="900" height="675">
+                        <figcaption id="leaderboard-caption" class="leaderboard-caption">Kristin Latt</figcaption>
+                    </figure>
+                    <div class="leaderboard-details">
+                        <p id="leaderboard-date">PDGA World Rankings snapshot as of March 18, 2026.</p>
+                        <ol id="leaderboard-list"></ol>
+                        <p><a href="https://www.pdga.com/world-rankings" target="_blank" rel="noopener">View current PDGA world rankings</a></p>
+                    </div>
+                </div>
             </article>
         </section>
 
-        <section class="card-grid">
-            <article class="content-card">
-                <h2>Disc Types Preview</h2>
-                <p>Text placeholder. Add a brief preview of putters, midranges, and drivers.</p>
-            </article>
+        <section class="content-card full-width-card">
+            <h2>Disc Types Preview</h2>
+            <div class="three-column-preview">
+                <article class="preview-column">
+                    <h3>Putters</h3>
+                    <p>Putters are designed for short, controlled throws and are most often used when aiming for the basket. They usually have a slower speed and a straighter flight, which helps players focus on accuracy.</p>
+                </article>
 
-            <article class="content-card">
-                <h2>Why Try Disc Golf?</h2>
-                <p>Text placeholder. Add a few sentences about accessibility, fun, or community.</p>
-            </article>
+                <article class="preview-column">
+                    <h3>Midranges</h3>
+                    <p>Midranges are useful for throws that need more distance than a putter but still need good control. They are a common choice for approach shots and for players who want a reliable, balanced flight.</p>
+                </article>
+
+                <article class="preview-column">
+                    <h3>Drivers</h3>
+                    <p>Drivers are made for longer throws and are typically used off the tee or on open fairways. They can travel farther than other discs, but they usually require more speed and control to throw well.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-card full-width-card">
+            <h2>Why Try Disc Golf?</h2>
+            <p>Disc golf is a great sport to try because it is affordable, easy to start, and enjoyable for many different skill levels. A beginner can get started with just one or two discs, and many courses are free to play. It is also a good way to spend time outside, get exercise, and enjoy friendly competition whether you are playing alone or with friends. You can also check <a href="https://www.discgolfscene.com/clubs" target="_blank" rel="noopener">Disc Golf Scene</a> to find local clubs that share free leagues, events, and tournaments to play in or spectate.</p>
         </section>
     </main>
 

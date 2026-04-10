@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Beginner form for disc golf interest and questions.">
+    <meta name="description" content="Sign up for beginner disc golf lessons with Kyle Emler.">
     <meta name="author" content="Kyle Emler">
     <link rel="stylesheet" href="styles/project.css">
-    <title>What in the World is Disc Golf? | Get Started</title>
+    <title>What in the World is Disc Golf? | Lessons</title>
 </head>
 <body>
     <header class="site-header">
@@ -25,18 +25,18 @@
 
     <main class="wrapper">
         <section class="page-heading">
-            <h1>Get Started</h1>
-            <p>Introductory text placeholder. Add a short invitation for beginners to share their interest or questions.</p>
+            <h1>Sign Up for Lessons</h1>
+            <p>If you are new to disc golf and want help getting started, this page lets you sign up for beginner lessons with Kyle Emler. Share a little about your experience and goals so your lesson can be a better fit for what you want to learn.</p>
         </section>
 
         <section class="content-card">
-            <h2>Beginner Interest Form</h2>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Placeholder input">
+            <h2>Lesson Sign-Up Form</h2>
+            <form action="lesson-request.html" method="get">
+                <label for="name">Name <span class="required-mark">*</span></label>
+                <input type="text" id="name" name="name" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Placeholder input">
+                <label for="email">Email <span class="required-mark">*</span></label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="experience">Experience Level</label>
                 <select id="experience" name="experience">
@@ -46,16 +46,40 @@
                     <option value="regular">Regular player</option>
                 </select>
 
-                <label for="message">Question or Goal</label>
-                <textarea id="message" name="message" rows="5" placeholder="Placeholder text"></textarea>
+                <fieldset class="form-fieldset">
+                    <legend>Lesson Focus</legend>
+                    <label><input type="checkbox" name="focus" value="basics"> Basics and rules</label>
+                    <label><input type="checkbox" name="focus" value="form"> Throwing form</label>
+                    <label><input type="checkbox" name="focus" value="discs"> Disc selection</label>
+                </fieldset>
+
+                <label for="availability">Preferred Day <span class="required-mark">*</span></label>
+                <select id="availability" name="availability" required>
+                    <option value="">Select one</option>
+                    <option value="weekday">Weekday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="flexible">Flexible</option>
+                </select>
+
+                <label for="message">Question or Goal <span class="required-mark">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="What would you like help with?" required></textarea>
 
                 <button type="submit">Submit</button>
             </form>
         </section>
 
         <section class="content-card">
-            <h2>Next Steps Section</h2>
-            <p>Text placeholder. Add guidance for what a beginner should do after learning the basics.</p>
+            <h2>Meet Your Instructor</h2>
+            <figure class="lesson-figure">
+                <img class="card-image full-image lesson-photo" src="images/kyle-hole-in-one.jpg" alt="Kyle Emler holding a disc after his first hole in one" loading="lazy">
+                <figcaption>Kyle's first Hole in 1</figcaption>
+            </figure>
+            <p>Learning with another player can make the sport feel less overwhelming at the start. These beginner-focused lessons can help with basic rules, throwing form, disc selection, and learning how to play your first rounds with confidence.</p>
+        </section>
+
+        <section class="content-card">
+            <h2>What to Expect</h2>
+            <p>Beginner lessons should feel encouraging and practical. A first lesson can cover how to grip and throw a disc, how to read a course, which discs are easiest to learn with, and what to focus on while building confidence as a new player.</p>
         </section>
     </main>
 

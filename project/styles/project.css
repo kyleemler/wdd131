@@ -216,6 +216,12 @@ main {
     border: 1px solid #ccd3da;
 }
 
+.disc-product-image {
+    background-color: #ffffff;
+    object-fit: contain;
+    padding: 0.75rem;
+}
+
 .full-image.card-image {
     height: auto;
     object-fit: contain;
@@ -244,6 +250,30 @@ main {
 form {
     display: grid;
     gap: 0.75rem;
+}
+
+.form-fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.lesson-figure {
+    margin: 0;
+    text-align: center;
+}
+
+.lesson-photo {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.required-mark {
+    color: #b30000;
+    font-weight: bold;
 }
 
 input,

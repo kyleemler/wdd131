@@ -11,13 +11,16 @@
 <body>
     <header class="site-header">
         <div class="wrapper">
-            <p class="site-title">What in the World is Disc Golf?</p>
+            <a class="brand" href="index.html">
+                <img class="site-logo" src="images/disc_golf_question_mark_logo.svg" alt="Disc golf basket and question mark logo">
+                <p class="site-title">What in the World is Disc Golf?</p>
+            </a>
             <nav aria-label="Main navigation">
                 <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="learn.html">Learn</a></li>
                     <li><a href="discs.html">Disc Guide</a></li>
-                    <li><a href="contact.html">Get Started</a></li>
+                    <li><a href="contact.html" aria-current="page">Get Started</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,6 +35,7 @@
         <section class="content-card">
             <h2>Lesson Sign-Up Form</h2>
             <form action="lesson-request.html" method="get">
+                <p>Fields marked with <span class="required-mark">*</span> are required.</p>
                 <label for="name">Name <span class="required-mark">*</span></label>
                 <input type="text" id="name" name="name" required>
 
@@ -47,7 +51,7 @@
                 </select>
 
                 <fieldset class="form-fieldset">
-                    <legend>Lesson Focus</legend>
+                    <legend>Lesson Focus: Choose all that apply</legend>
                     <label><input type="checkbox" name="focus" value="basics"> Basics and rules</label>
                     <label><input type="checkbox" name="focus" value="form"> Throwing form</label>
                     <label><input type="checkbox" name="focus" value="discs"> Disc selection</label>
@@ -62,7 +66,7 @@
                 </select>
 
                 <label for="message">Question or Goal <span class="required-mark">*</span></label>
-                <textarea id="message" name="message" rows="5" placeholder="What would you like help with?" required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Tell Kyle what you would like help with." required></textarea>
 
                 <button type="submit">Submit</button>
             </form>
@@ -85,8 +89,11 @@
 
     <footer class="site-footer">
         <div class="wrapper">
-            <p>&copy; <span id="currentyear"></span> Kyle Emler</p>
-            <p><a href="references.html" target="_blank" rel="noopener">References</a></p>
+            <div class="footer-text">
+                <p>&copy; <span id="currentyear"></span> Kyle Emler</p>
+                <p><a href="references.html" target="_blank" rel="noopener">References</a></p>
+            </div>
+            <img class="footer-logo" src="images/disc_golf_question_mark_logo.svg" alt="">
         </div>
     </footer>
 

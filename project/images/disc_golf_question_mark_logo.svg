@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="600" height="900" role="img" aria-labelledby="title desc">
+  <title id="title">Disc golf question mark logo</title>
+  <desc id="desc">A simple black vector logo combining a question mark with a disc golf basket, chains, and a flying disc.</desc>
+
+  <g fill="#111111" stroke="none">
+    <!-- Main question mark body -->
+    <path d="
+      M 300 120
+      C 190 120, 120 190, 120 275
+      C 120 302, 142 324, 170 324
+      C 198 324, 220 302, 220 275
+      C 220 238, 254 210, 300 210
+      C 352 210, 388 246, 388 296
+      C 388 340, 365 374, 328 414
+      C 284 463, 265 500, 265 560
+      L 265 595
+      C 265 617, 283 635, 305 635
+      C 327 635, 345 617, 345 595
+      L 345 570
+      C 345 535, 357 512, 389 476
+      C 437 423, 478 379, 478 295
+      C 478 191, 399 120, 300 120
+      Z"/>
+
+    <!-- Flying disc -->
+    <path d="
+      M 212 332
+      C 252 304, 320 295, 370 314
+      C 382 319, 384 334, 374 343
+      C 344 371, 263 377, 215 359
+      C 200 354, 198 341, 212 332
+      Z"/>
+    <path d="
+      M 257 323
+      C 276 314, 306 314, 326 321
+      C 316 329, 292 334, 267 333
+      C 261 333, 257 329, 257 323
+      Z" fill="#ffffff"/>
+    <path d="
+      M 176 372
+      L 240 350
+      L 190 392
+      Z"/>
+    <path d="
+      M 155 388
+      L 226 362
+      L 172 406
+      Z"/>
+
+    <!-- Basket top rim -->
+    <ellipse cx="300" cy="660" rx="112" ry="16"/>
+
+    <!-- Chains hanging from inner arch -->
+    <rect x="190" y="210" width="8" height="30" rx="4"/>
+    <rect x="188" y="246" width="8" height="30" rx="4"/>
+
+    <rect x="235" y="188" width="8" height="30" rx="4"/>
+    <rect x="233" y="224" width="8" height="30" rx="4"/>
+    <rect x="231" y="260" width="8" height="30" rx="4"/>
+
+    <rect x="285" y="176" width="8" height="30" rx="4"/>
+    <rect x="285" y="212" width="8" height="30" rx="4"/>
+    <rect x="285" y="248" width="8" height="30" rx="4"/>
+
+    <rect x="335" y="182" width="8" height="30" rx="4"/>
+    <rect x="335" y="218" width="8" height="30" rx="4"/>
+
+    <rect x="381" y="208" width="8" height="30" rx="4"/>
+    <rect x="379" y="244" width="8" height="30" rx="4"/>
+
+    <!-- Basket cage -->
+    <path d="
+      M 206 670
+      L 394 670
+      L 378 748
+      C 344 768, 256 768, 222 748
+      Z"/>
+
+    <!-- Basket inner cutouts -->
+    <rect x="240" y="682" width="10" height="66" fill="#ffffff"/>
+    <rect x="290" y="682" width="10" height="66" fill="#ffffff"/>
+    <rect x="340" y="682" width="10" height="66" fill="#ffffff"/>
+
+    <path d="M 224 704 L 376 704 L 372 716 L 228 716 Z" fill="#ffffff"/>
+    <path d="M 219 730 L 381 730 L 377 742 L 223 742 Z" fill="#ffffff"/>
+
+    <!-- Pole -->
+    <rect x="286" y="764" width="28" height="110" rx="10"/>
+
+    <!-- Dot / base -->
+    <ellipse cx="300" cy="850" rx="84" ry="20"/>
+  </g>
+</svg>

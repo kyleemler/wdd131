@@ -11,12 +11,15 @@
 <body>
     <header class="site-header">
         <div class="wrapper">
-            <p class="site-title">What in the World is Disc Golf?</p>
+            <a class="brand" href="index.html">
+                <img class="site-logo" src="images/disc_golf_question_mark_logo.svg" alt="Disc golf basket and question mark logo">
+                <p class="site-title">What in the World is Disc Golf?</p>
+            </a>
             <nav aria-label="Main navigation">
                 <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="learn.html">Learn</a></li>
-                    <li><a href="discs.html">Disc Guide</a></li>
+                    <li><a href="discs.html" aria-current="page">Disc Guide</a></li>
                     <li><a href="contact.html">Get Started</a></li>
                 </ul>
             </nav>
@@ -66,8 +69,11 @@
 
     <footer class="site-footer">
         <div class="wrapper">
-            <p>&copy; <span id="currentyear"></span> Kyle Emler</p>
-            <p><a href="references.html" target="_blank" rel="noopener">References</a></p>
+            <div class="footer-text">
+                <p>&copy; <span id="currentyear"></span> Kyle Emler</p>
+                <p><a href="references.html" target="_blank" rel="noopener">References</a></p>
+            </div>
+            <img class="footer-logo" src="images/disc_golf_question_mark_logo.svg" alt="">
         </div>
     </footer>
 

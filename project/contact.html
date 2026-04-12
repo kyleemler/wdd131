@@ -16,7 +16,7 @@
                 <p class="site-title">What in the World is Disc Golf?</p>
             </a>
             <nav aria-label="Main navigation">
-                <ul class="nav-list">
+                <ul class="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="learn.html">Learn</a></li>
                     <li><a href="discs.html">Disc Guide</a></li>
@@ -35,11 +35,11 @@
         <section class="content-card">
             <h2>Lesson Sign-Up Form</h2>
             <form action="lesson-request.html" method="get">
-                <p>Fields marked with <span class="required-mark">*</span> are required.</p>
-                <label for="name">Name <span class="required-mark">*</span></label>
+                <p>Fields marked with <span class="recquired">*</span> are required.</p>
+                <label for="name">Name <span class="recquired">*</span></label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email">Email <span class="required-mark">*</span></label>
+                <label for="email">Email <span class="recquired">*</span></label>
                 <input type="email" id="email" name="email" required>
 
                 <label for="experience">Experience Level</label>
@@ -52,12 +52,12 @@
 
                 <fieldset class="form-fieldset">
                     <legend>Lesson Focus: Choose all that apply</legend>
-                    <label><input type="checkbox" name="focus" value="basics"> Basics and rules</label>
-                    <label><input type="checkbox" name="focus" value="form"> Throwing form</label>
-                    <label><input type="checkbox" name="focus" value="discs"> Disc selection</label>
+                    <label><input type="checkbox" name="focus" value="basics">Basics and rules</label>
+                    <label><input type="checkbox" name="focus" value="form"> Throwing form </label>
+                    <label><input type="checkbox" name="focus" value="discs"> Disc selection.</label>
                 </fieldset>
 
-                <label for="availability">Preferred Day <span class="required-mark">*</span></label>
+                <label for="availability">Preferred Day <span class="recquired">*</span></label>
                 <select id="availability" name="availability" required>
                     <option value="">Select one</option>
                     <option value="weekday">Weekday</option>
@@ -65,10 +65,10 @@
                     <option value="flexible">Flexible</option>
                 </select>
 
-                <label for="message">Question or Goal <span class="required-mark">*</span></label>
+                <label for="message">Question or Goal <span class="recquired">*</span></label>
                 <textarea id="message" name="message" rows="5" placeholder="Tell Kyle what you would like help with." required></textarea>
 
-                <button type="submit">Submit</button>
+                <button type="submit">Sumit</button>
             </form>
         </section>
 
